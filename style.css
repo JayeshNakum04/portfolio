@@ -524,3 +524,84 @@
             background-color: #0056b3;
         }
         
+
+    
+
+        body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #0f172a;
+        color: #fff;
+        }
+
+        .certificate-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+
+        .certificate-preview {
+        width: 200px;
+        text-align: center;
+        cursor: pointer;
+        }
+
+        .certificate-preview img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transition: transform 0.2s ease;
+        }
+
+        .certificate-preview:hover img {
+        transform: scale(1.05);
+        }
+
+        .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.85);
+        }
+
+        .modal iframe {
+        width: 80%;
+        height: 80vh;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        }
+
+        .modal .close {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        }
+
+        .download-btn {
+        display: block;
+        text-align: center;
+        margin: 15px auto 30px;
+        background: #3b82f6;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        width: fit-content;
+        }
+
+        .download-btn:hover {
+        background: #2563eb;
+        }
+

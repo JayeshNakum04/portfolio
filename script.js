@@ -99,3 +99,15 @@
           ease: 'power3.out'
       });
   });
+
+function openModal(pdfUrl) {
+  document.getElementById("modalIframe").src = pdfUrl;
+  document.getElementById("downloadLink").href = pdfUrl;
+  document.getElementById("pdfModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("pdfModal").style.display = "none";
+  document.getElementById("modalIframe").src = "";
+}
+
